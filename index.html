@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/default.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="./images/eshipping-logo.png" width="32" height="32" class="d-inline-block align-top" alt="">
+              Shipping
+            </a>
+            <!-- <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" @click.prevent="logout">Login</a>
+                </li>
+            </ul> -->
+        </nav>
+        <div id="app" class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <page-title></page-title>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <login v-show="!loggedin" @onlogin="handleLogin"></login>
+                    <location-view :endpoint="apiEndpoint" :apikey="apiKey" :geocodeapi="geocodeAPI" v-show="loggedin"></location-view>
+                </div>
+            </div> 
+        </div>
+        <script src="./js/vuex.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./js/components/Login.js"></script>
+        <script src="./js/components/PageTitle.js"></script>
+        <script src="./js/components/Locate.js"></script>
+        <script src="./js/components/Map.js"></script>
+        <script src="./js/components/Button.js"></script>
+        <script src="./js/components/View.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh6zcmBFF01tTcY64onDaWps44lLf6VwM&callback=initMap"></script>
+        
+    </body>
+</html>

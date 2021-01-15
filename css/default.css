@@ -1,0 +1,11 @@
+#gmap {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    max-height: 360px;
+    height: 100vh;
+}
+
+.destination {
+    text-align: left;
+}
