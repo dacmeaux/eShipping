@@ -14,6 +14,7 @@ __Features__
 - Simulated login (form checking intentionally left out)
 - Simulated data fetching for geolocation data and vehicle charge status
 - Multi-view interface: ability to toggle list and map views
+- List view has toggleable battery status display (graph or percentage view)
 - Map shows droppin, vehicle id, and a detail tooltip (onclick) with destination and charge status
 
 __Operation__
