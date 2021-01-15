@@ -24,9 +24,9 @@ __Operation__
   - the user has the option to click the "View Map" button to see vehicles on a map
   - each vehicle's position is shown as a drop pin 📍 with the vehicle id and the user can see more details about the vhicle by clicking on the drop pin.
   
-  __Omissions/Enhancements__
-  
-  - Applicaton would be secured with proper authentication
-  - Real-time data fetching at small intervals to show movement of vehicles on a map
-  - Time and distance to destination
-  - Distance to nearest charging stations
+__Omissions/Enhancements__
+
+- Applicaton would be secured with proper authentication
+- Real-time data fetching at small intervals to show movement of vehicles on a map
+- Time and distance to destination
+- Distance to nearest charging stations
