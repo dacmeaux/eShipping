@@ -1,5 +1,4 @@
 # eShipping
-GM Interview Technical Exercise for Frontend Web Developer
 
 __Overview__
 
